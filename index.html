@@ -1,1 +1,79 @@
-asdf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The-Pleasant-Retreat-Form-Section</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div id="sideHeader">
+        <div class="transBg">
+            <img src="./Images/cabin.png" alt="A small cabin with trees" class="sideHeaderLogo">
+            <h2>The  Pleasant  Retreat</h2>
+            <p><em>Est.  2022</em></p>
+        </div>
+        <p class="sideFoot">Image by Charlie Harris, Unsplash+</p>
+    </div>
+
+    <div class="formSection">
+        <div class="formIntro">
+            <p>Welcome to The Pleasant Retreat contact section.  Let us know what you think, or for any other inquiries.</p>
+            <p>We'd want to know what <em>you</em> think.</p>
+        </div>
+        <div class="introImg">
+        <img src="./Images/cryptoflash-tattoo.gif" alt="Small cabin with animated smoking chimney">
+        </div>
+        <form action="#">
+            <div class="mainForm">
+                <h2>Let us know!</h2>
+                <div class="names">
+                    <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required placeholder="John">
+                    </div>
+                    <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required placeholder="Smith">
+                    </div>
+                </div>
+                <div class="email">
+                    <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="johnsmith@example.com">
+                    <p for="email" class="emailInvalid">** Please enter a valid email</p>
+                    </div>
+                    <div>
+                    <label for="phone">Phone Number <em>(Optional)</em></label>
+                    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555- 555-5555">
+                    <p class="invalidPhone">** Please enter a valid phone number</p>
+                    </div>
+                </div>
+                <div class="password">
+                    <div>
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="">
+                    <p class="invalidPassword">
+                        <em>** Password must contain at least 1 digit, one uppercase letter, and be at least 8 characters long.
+                        </em>
+                    </p>
+                    </div>
+                    <div>
+                    <label for="passwordConfirm">Confirm Password</label>
+                    <input type="text" name="confirmPassword" id="confirmPassword">
+                    </div>
+                </div>
+            <div class="passwordInfo">
+            </div>
+            </div>
+            <div class="submitSection">
+                <button>Submit</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
